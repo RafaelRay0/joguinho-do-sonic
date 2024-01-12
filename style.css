@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: auto;
+    background-color: #393838;
+   background-attachment: fixed;
+}
+
+.gameplay {
+    width: 80%;
+    height: 520px;
+    border:2px solid #ccc ;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(img/fundo.novo.gif);
+    overflow: hidden;
+}
+
+button {
+    width: 200px;
+    height: 100px;
+    background-image:linear-gradient(to top, #fff, #393838);
+    box-shadow: 0px 3px 3px #0a0a0a;
+    font-size: 16px;
+    display: block;
+    border: 2px solid #f7f2f260;
+    border-radius: 10px;
+    margin: 25px auto;
+    outline: none;
+}
+button:active {
+    opacity: .4;
+}
+
+.sonic {
+    width: 150px;
+    bottom: 5px;
+    position: absolute;
+    
+}
+
+.jump {
+    animation: 1s sonic-animation infinite ease-out;
+}
+
+.eggman {
+    width: 250px;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    animation: 2S eggman-animation infinite linear ;
+}
+
+.fundo {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes eggman-animation {
+    
+    0% {
+        right: -250px;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes sonic-animation {
+
+    0% {
+        bottom: 110;
+    }
+    25% {
+        bottom: 170px;
+    }
+    75% {
+        bottom: 170px;
+    }
+    100% {
+        bottom: 110;
+    }
+    
+} 
